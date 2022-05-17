@@ -9,15 +9,21 @@ export default function Calender() {
      <div className="points">
      <div className="empty"></div>
      <div className="empty"></div>
-     <div className="point"></div>
+     <div className="racePoint">
+     <div className="point"></div>race on 3/5/2022
+     </div>
      <div className="empty"></div>
      <div className="empty"></div>
      <div className="empty"></div>
      <div className="empty"></div>
-     <div className="point"></div>
+     <div className="racePoint">
+     <div className="point"></div>race on 3/5/2022
+     </div>
      <div className="empty"></div>
      <div className="empty"></div>
-     <div className="point"></div>
+     <div className="racePoint">
+     <div className="point"></div>race on 3/5/2022
+     </div>
      </div>
     </div>
     
