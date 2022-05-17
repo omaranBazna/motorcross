@@ -12,7 +12,7 @@ import tutor3 from './graphics/tutors/3.jpg'
 
 import Tutor from './Tutor'
 import React from "react";
-
+import Calender from './Calender'
 import './App.css';
 export default function App() {
 
@@ -71,6 +71,12 @@ export default function App() {
     </section>
     <section className='calender'>
        <h1>our next races</h1>
+       <Calender>
+
+       </Calender>
+       <p>
+         hello all for this reason I exit
+       </p>
     </section>
     <section className='results'>
 
