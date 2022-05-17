@@ -1,4 +1,5 @@
 import logo from './graphics/logo.png'
+import results from './graphics/results.jpg'
 import image1 from './graphics/thumps/1.JPG'
 import image2 from './graphics/thumps/2.JPG'
 import image3 from './graphics/thumps/3.JPG'
@@ -77,7 +78,10 @@ export default function App() {
       
     </section>
     <section className='results'>
-
+       <h1>See our heros ,Previous results</h1>
+       <div className="resultsImage">
+       <img src={results} />
+       </div>
     </section>
     <footer>
 

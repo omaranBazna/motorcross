@@ -80,3 +80,11 @@ height:500px;
 .tutor h1{
   margin:15px auto;
 }
+.resultsImage{
+  display:Flex;
+width:100%;
+}
+.resultsImage img{
+  width:500px;
+  margin:auto;
+}
