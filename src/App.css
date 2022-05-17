@@ -53,17 +53,17 @@ nav div{
 
 .start{
 
-  opacity: 0.6;
-  transition: opacity .23s ease-in-out;
+  opacity: 0;
+
 }
 .middle{
   opacity: 1;
-  transition: opacity .23s ease-in-out;
+
 }
 
 .end{
-  opacity: 0.6;
-  transition: opacity .23s ease-in-out;
+  opacity: 0;
+
 }
 .right img{
 width:500px;
