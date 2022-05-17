@@ -63,10 +63,10 @@ export default function App() {
     <section className='tutor'>
         <h1>meet our tutors</h1>
         <div className='tutors'>
-        <Tutor></Tutor>
-        <Tutor></Tutor>
-        <Tutor></Tutor>
-        <Tutor></Tutor>
+        <Tutor image={1}></Tutor>
+        <Tutor image={2}></Tutor>
+        <Tutor image={3}></Tutor>
+       
         </div>
     </section>
     <section className='calender'>
