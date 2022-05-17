@@ -1,0 +1,20 @@
+
+p{
+    width:200px;
+
+    background:black;
+    color:white;
+    padding:20px;
+    border-radius:5px;
+    text-align: center;
+}
+.Tutor{
+    border:2px solid black;
+    background:white;
+    border-radius:5px;
+    width:fit-content;
+    padding:15px;
+}
+h1{
+    text-align: center;
+}

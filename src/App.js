@@ -4,6 +4,13 @@ import image2 from './graphics/thumps/2.JPG'
 import image3 from './graphics/thumps/3.JPG'
 import image5 from './graphics/thumps/5.JPG'
 import image6 from './graphics/thumps/6.JPG'
+
+
+import tutor1 from './graphics/tutors/1.jpg'
+import tutor2 from './graphics/tutors/2.jpg'
+import tutor3 from './graphics/tutors/3.jpg'
+
+import Tutor from './Tutor'
 import React from "react";
 
 import './App.css';
@@ -37,6 +44,7 @@ export default function App() {
     </nav>
     <section className='hero'>
       <div className='left'>
+        <img src={logo} />
          <h1>
            Motocross Club in Abu Dhabi
          </h1>
@@ -53,7 +61,13 @@ export default function App() {
       
     </section>
     <section className='tutor'>
-
+        <h1>meet our tutors</h1>
+        <div className='tutors'>
+        <Tutor></Tutor>
+        <Tutor></Tutor>
+        <Tutor></Tutor>
+        <Tutor></Tutor>
+        </div>
     </section>
     <section className='calender'>
 
