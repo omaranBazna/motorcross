@@ -5,24 +5,25 @@ import image3 from './graphics/thumps/3.JPG'
 import image4 from './graphics/thumps/4.JPG'
 import image5 from './graphics/thumps/5.JPG'
 import image6 from './graphics/thumps/6.JPG'
+import React, { useState } from "react";
+
 import './App.css';
 
 const images = [image1,image2,image3,image4,image5,image6];
-function App() {
-  const [currentIndex, setCurrentIndex] = useState(0);
+export default function App() {
+  const [currentImage, setCurrentImage] = useState(0);
 
-  useEffect(() => {
-      const intervalId = setInterval(() => {
-          if(currentIndex === images.length - 1) {
-              setCurrentIndex(0);
-          } 
-          else {
-               setCurrentIndex(currentIndex + 1);
-          }
-      }, 5000)
+  let i=0;
+
+     setInterval(() => {
+        i +=1;
+        if(i>images.length-1){
+          i=0;
+        }
+          setCurrentImage(i);
+      }, 1000)
       
-      return () => clearInterval(intervalId);
-  }, [])
+     
 
   return (
     <div className="App">
@@ -56,10 +57,10 @@ function App() {
          </h2>
       </div>
       <div className='right'>
-     
-        
+      
+          <img src={images[currentImage]} height="450px" ></img>
     
-       <img src={currentImage} height="450px" ></img>
+      
       </div>
       
     </section>
@@ -78,5 +79,3 @@ function App() {
      </div>
   );
 }
-
-export default App;
