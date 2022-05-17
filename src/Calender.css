@@ -14,8 +14,7 @@
     border-radius:50%;
     background:rgb(145, 52, 52);
     border:4px solid black;
-    font-size:10px;
-    font-weight:bold;
+  
 }
 .empty{
     height: 10px;
@@ -32,4 +31,11 @@
 }
 .Calender{
     margin:60px auto;
+}
+.racePoint{
+    font-size:10px;
+    font-weight:bold;
+    display: flex;
+    transform-origin: 8px 8px;
+    transform: rotateZ(-30deg);
 }
