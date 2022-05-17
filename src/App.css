@@ -51,4 +51,21 @@ nav div{
   width:50%;
 }
 
+.start{
 
+  opacity: 0.6;
+  transition: opacity .23s ease-in-out;
+}
+.middle{
+  opacity: 1;
+  transition: opacity .23s ease-in-out;
+}
+
+.end{
+  opacity: 0.6;
+  transition: opacity .23s ease-in-out;
+}
+.right img{
+width:500px;
+height:500px;
+}

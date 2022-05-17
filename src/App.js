@@ -2,28 +2,37 @@ import logo from './graphics/logo.png'
 import image1 from './graphics/thumps/1.JPG'
 import image2 from './graphics/thumps/2.JPG'
 import image3 from './graphics/thumps/3.JPG'
-import image4 from './graphics/thumps/4.JPG'
 import image5 from './graphics/thumps/5.JPG'
 import image6 from './graphics/thumps/6.JPG'
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 
 import './App.css';
 
-const images = [image1,image2,image3,image4,image5,image6];
+const images = [image1,image2,image3,image5,image6];
+const names=["start","middle","middle","middle","middle","middle","middle","middle","middle","middle","middle","middle","end"]
 export default function App() {
   const [currentImage, setCurrentImage] = useState(0);
-
+  const [name,setName]=useState("start");
   let i=0;
+  let u=0;
+useEffect(() => {
+  const interval = setInterval(() => {
+    i +=1;
+    setCurrentImage(i%5);
 
-     setInterval(() => {
-        i +=1;
-        if(i>images.length-1){
-          i=0;
-        }
-          setCurrentImage(i);
-      }, 1000)
-      
-     
+  }, 3000);
+  return () => clearInterval(interval);
+}, []);
+
+
+useEffect(() => {
+  const interval = setInterval(() => {
+    u +=1;
+    setName(names[u%13]);
+    
+  }, 3000/13);
+  return () => clearInterval(interval);
+}, []);
 
   return (
     <div className="App">
@@ -58,7 +67,7 @@ export default function App() {
       </div>
       <div className='right'>
       
-          <img src={images[currentImage]} height="450px" ></img>
+          <img src={images[currentImage]} className={name} height="450px" ></img>
     
       
       </div>
