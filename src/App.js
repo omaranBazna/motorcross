@@ -70,13 +70,11 @@ export default function App() {
         </div>
     </section>
     <section className='calender'>
-       <h1>our next races</h1>
+       <h1>races timeline</h1>
        <Calender>
 
        </Calender>
-       <p>
-         hello all for this reason I exit
-       </p>
+      
     </section>
     <section className='results'>
 
