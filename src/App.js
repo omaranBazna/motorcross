@@ -84,7 +84,7 @@ export default function App() {
        </div>
     </section>
     <footer>
-
+    
     </footer>
      </div>
   );
